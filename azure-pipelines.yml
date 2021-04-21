@@ -33,7 +33,7 @@ stages:
   displayName: Build stage
   jobs:
   - job: BuildJob
-    pool:
+    pool: AgenteLinux
       vmImage: $(vmImageName)
     steps:
     - task: UsePythonVersion@0
@@ -69,7 +69,7 @@ stages:
   condition: succeeded()
   jobs:
   - deployment: DeploymentJob
-    pool:
+    pool: AgenteLinux
       vmImage: $(vmImageName)
     environment: $(environmentName)
     strategy:
