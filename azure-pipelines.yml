@@ -16,7 +16,7 @@ variables:
   
   # pool VM image name
 pool:
-name: AgenteLinux
+    name: AgenteLinux
 
   # Python version: 3.7
 pythonVersion: '3.7'
