@@ -17,7 +17,7 @@ variables:
   webAppName: 'webapprlp'
   
   # Agent VM image name
-  #vmImageName: 'linuxag'
+  vmImageName: 'Linux (ubuntu 18.04)'
 
   # Environment name
   environmentName: 'webapprlp'
