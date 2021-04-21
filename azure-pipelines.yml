@@ -15,7 +15,7 @@ variables:
 
   # Web app name
   webAppName: 'webapprlp'
-
+  pool: AgenteLinux
   # Agent VM image name
   vmImageName: 'linuxag'
 
