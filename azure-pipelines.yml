@@ -19,7 +19,7 @@ pool:
     name: AgenteLinux
 
   # Python version: 3.7
-python.Version: '3.7'
+    pythonVersion: '3.7'
 
 stages:
 - stage: Build
