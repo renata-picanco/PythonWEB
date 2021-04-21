@@ -8,7 +8,7 @@ trigger:
 - main
 
 variables:
-  pool: AgenteLinux
+  pool: 'AgenteLinux'
   
   # Azure Resource Manager connection created during pipeline creation
   azureServiceConnectionId: '0d7d9284-fc20-44e4-984e-e234637a691e'
