@@ -17,7 +17,7 @@ variables:
   # Agent VM image name
 pool:
 name: AgenteLinux
-vmImageName: 'ubuntu-latest'
+vmImageName: 'linuxag'
 
   # Environment name
   environmentName: 'webapprlp'
