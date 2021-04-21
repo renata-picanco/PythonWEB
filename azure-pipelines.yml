@@ -17,7 +17,7 @@ variables:
   webAppName: 'webapprlp'
 
   # Agent VM image name
-  vmImageName: 'ubuntu-latest'
+  vmImageName: 'linuxag'
 
   # Environment name
   environmentName: 'webapprlp'
@@ -33,7 +33,7 @@ stages:
   displayName: Build stage
   jobs:
   - job: BuildJob
-    pool: AgenteLinux
+    pool:
       vmImage: $(vmImageName)
     steps:
     - task: UsePythonVersion@0
@@ -69,7 +69,7 @@ stages:
   condition: succeeded()
   jobs:
   - deployment: DeploymentJob
-    pool: AgenteLinux
+    pool:
       vmImage: $(vmImageName)
     environment: $(environmentName)
     strategy:
