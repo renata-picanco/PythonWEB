@@ -12,14 +12,18 @@ variables:
   # Azure Resource Manager connection created during pipeline creation
   azureServiceConnectionId: '0d7d9284-fc20-44e4-984e-e234637a691e'
 
-  # Web app name
-  webAppName: 'webapprlp'
+
   
   # Agent VM image name
-  vmImageName: 'linuxag'
+pool:
+name: AgenteLinux
+vmImageName: 'ubuntu-latest'
 
   # Environment name
   environmentName: 'webapprlp'
+
+    # Web app name
+  webAppName: 'webapprlp'
 
   # Project root folder. Point to the folder containing manage.py file.
   projectRoot: $(System.DefaultWorkingDirectory)
