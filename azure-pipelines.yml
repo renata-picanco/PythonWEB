@@ -3,19 +3,19 @@
 # Change python version to one thats appropriate for your application.
 # https://docs.microsoft.com/azure/devops/pipelines/languages/python
 
-#pool:
-pool: AgenteLinux
 
 trigger:
 - main
 
 variables:
+  pool: AgenteLinux
+  
   # Azure Resource Manager connection created during pipeline creation
   azureServiceConnectionId: '0d7d9284-fc20-44e4-984e-e234637a691e'
 
   # Web app name
   webAppName: 'webapprlp'
-  pool: AgenteLinux
+  
   # Agent VM image name
   vmImageName: 'linuxag'
 
