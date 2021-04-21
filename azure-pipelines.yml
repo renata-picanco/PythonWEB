@@ -14,16 +14,9 @@ variables:
 
 
   
-  # Agent VM image name
+  # pool VM image name
 pool:
 name: AgenteLinux
-      vmImageName: 'linuxag'
-
-  # Environment name
-      environmentName: 'webapprlp'
-
-    # Web app name
-      webAppName: 'webapprlp'
 
   # Project root folder. Point to the folder containing manage.py file.
       projectRoot: $(System.DefaultWorkingDirectory)
