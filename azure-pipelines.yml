@@ -17,16 +17,16 @@ variables:
   # Agent VM image name
 pool:
 name: AgenteLinux
-#vmImageName: 'linuxag'
+      vmImageName: 'linuxag'
 
   # Environment name
-environmentName: 'webapprlp'
+      environmentName: 'webapprlp'
 
     # Web app name
-webAppName: 'webapprlp'
+      webAppName: 'webapprlp'
 
   # Project root folder. Point to the folder containing manage.py file.
-projectRoot: $(System.DefaultWorkingDirectory)
+      projectRoot: $(System.DefaultWorkingDirectory)
 
   # Python version: 3.7
 pythonVersion: '3.7'
